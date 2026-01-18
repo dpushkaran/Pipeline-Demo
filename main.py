@@ -27,5 +27,6 @@ def generate_response(user_prompt):
 if __name__ == "__main__":
     prompt = "Explain the concept of a variable in python"
     answer = generate_response(prompt)
-    print("Response from the professor:")
-    print(answer)
+    
+    with open("output.txt", "w") as file:
+        file.write(answer)
