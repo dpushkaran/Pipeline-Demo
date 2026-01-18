@@ -25,7 +25,7 @@ def generate_response(user_prompt):
     return result
 
 if __name__ == "__main__":
-    prompt = "Explain the concept of an API"
+    prompt = "Explain the concept of a variable in python"
     answer = generate_response(prompt)
     print("Response from the professor:")
     print(answer)
