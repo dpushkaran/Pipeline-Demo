@@ -15,9 +15,8 @@ def generate_response(user_prompt):
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=messages,
-        temperature=1,
-        max_tokens=500,
-        n = 3
+        temperature=.5,
+        max_tokens=100,
     )
 
     result = response.choices[0].message.content
@@ -25,7 +24,7 @@ def generate_response(user_prompt):
     return result
 
 if __name__ == "__main__":
-    prompt = "Explain the concept of a variable in python"
+    prompt = "Explain what a variable is in python in a short and simple way"
     answer = generate_response(prompt)
     
     with open("output.txt", "w") as file:
