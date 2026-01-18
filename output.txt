@@ -1,0 +1,8 @@
+In Python, a variable is a name that you assign to a value, which allows you to store and manipulate that value in your program. It's like a labeled box where you can keep information, such as numbers, text, or more complex data types. You create a variable by choosing a name and using the assignment operator `=` to assign it a value, like this:
+
+```python
+age = 25
+name = "Alice"
+```
+
+Here, `age` and `name` are
